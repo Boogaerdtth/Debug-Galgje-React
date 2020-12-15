@@ -27,7 +27,8 @@ const isGameOver = game => {
     return true;
   }
   if (
-    getWrongLetters(game.chosenWord, game.guessedLetters).length >
+    // onderstaan was alleen een > ingevuld ipv >=
+    getWrongLetters(game.chosenWord, game.guessedLetters).length >=
     game.maxGuesses
   ) {
     return true;

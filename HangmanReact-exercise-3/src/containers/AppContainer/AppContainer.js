@@ -26,7 +26,7 @@ class AppContainer extends React.Component {
     console.log(`We chose word: ${list[index]}`);
     return list[index];
   }
-
+  // ik zie dat event onderstaand niet is gedefinieerd. vals alarm
   restartGameHandler = event => {
     this.setState({
       chosenWord: this.chooseWord(wordList),

@@ -27,8 +27,9 @@ const App = props => {
   const wrongLetters = getWrongLetters(game.chosenWord, game.guessedLetters);
   const gameIsOver = isGameOver(game, wrongLetters, wordWasGuessed);
 
+  // Er was een typefout in onderstaande! wordGuesed=
   const gameOver = gameIsOver ? (
-    <GameOver chosenWord={game.chosenWord} wordGuesed={wordWasGuessed} />
+    <GameOver chosenWord={game.chosenWord} wordGuessed={wordWasGuessed} />
   ) : null;
 
   return (

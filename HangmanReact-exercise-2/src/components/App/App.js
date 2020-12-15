@@ -30,7 +30,7 @@ const App = props => {
   const gameOver = gameIsOver ? (
     <GameOver chosenWord={game.chosenWord} wordGuessed={wordWasGuessed} />
   ) : null;
-
+  // bij onderstaande props doorgeef zie ik dat het van de guessLetterHandler moet komen
   return (
     <div className="App">
       <h1>Simple 'Hangman' Game</h1>
